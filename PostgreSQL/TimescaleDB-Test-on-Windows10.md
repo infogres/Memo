@@ -1,4 +1,4 @@
-# Timescale DB
+# Timescale DB on Windows
 
 （2019-03-02 JPUG合宿2019草津にて）
 
