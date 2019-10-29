@@ -207,11 +207,18 @@ Informix Corporation
 object "Informix Universal Server V9" as Informix9 {
 Informix Corporation
 }
+object "Informix Universal Server V10" as Informix10 {
+Informix Corporation
+}
 object "Informix Dynamic Server V11.5" as Informix11 {
 IBM Corporation
 }
 
 object "Informix V12.10" as Informix12 {
+IBM Corporation
+}
+
+object "Informix V14.10" as Informix14 {
 IBM Corporation
 }
 
@@ -221,8 +228,10 @@ informix --> Informix1 : 1985
 Informix1 --> Informix5 : 1990
 Informix5 --> Informix7 : 1994
 Informix7 --> Informix9 : 1996
-Informix9 ---> Informix11 : 2008
-Informix11 ---> Informix12 : 2018
+Informix9 ---> Informix10 : 2005
+Informix10 ---> Informix11 : 2008
+Informix11 ---> Informix12 : 2013
+Informix12 --> Informix14 : 2019
 
 
 
