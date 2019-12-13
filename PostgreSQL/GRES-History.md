@@ -1,4 +1,4 @@
-### INGRES/POSTGRES関連RDBMSの系統
+### GRESファミリー(INGRES/POSTGRES関連RDBMS)の系譜
 
 <!-- 
 object "INFORMIX-Turbo 4" as Informix4 {
@@ -114,6 +114,7 @@ U.C. Berkeley
 object "Postgres95" as Pg95 {
 U.C. Berkeley
 }
+
 object Illustra {
 Illustra Information Technologies
 }
@@ -126,6 +127,10 @@ Cohera Corporation
 object "Enterprise Catalog Management" as PeopleSoft {
 PeopleSoft
 }
+object "PeopleSoft 9.0 " as PeopleSoft9 {
+Oracle Corporation
+}
+
 object "PostgreSQL 6.0" as Pg6 {
 PGDG:
 PostgreSQL Gloval Development Group
@@ -180,9 +185,8 @@ Pg11 --> Pg12 : 2019
 Mike <|.. Mariposa
 Pg95 --* Mariposa : 1996
 Mariposa --> Cohera : 1996
-Cohera --* PeopleSoft : 2001
-
-
+Cohera ..* PeopleSoft : 2001
+PeopleSoft ..* PeopleSoft9: 2005
 
 object "IBM ISAM" as ISAM {
 ISAM: System/360
